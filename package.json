@@ -1,0 +1,22 @@
+{
+  "name": "project-for-aquadelivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaterinaZM/project-for-AquaDelivery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaterinaZM/project-for-AquaDelivery/issues"
+  },
+  "homepage": "https://github.com/KaterinaZM/project-for-AquaDelivery#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
