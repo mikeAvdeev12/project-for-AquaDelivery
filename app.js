@@ -4,6 +4,8 @@ const path = require("path");
 const indexRouts = require('./routes/index')
 const parserRouts = require('./routes/parser')
 const registerRouts = require('./routes/register');
+const orglistRouts = require('./routes/orglist')
+
 
 const app = express();
 const hbs = exphbs.create({
@@ -18,6 +20,11 @@ app.use(express.urlencoded({extended: true}))
 app.use('/', indexRouts)
 app.use('/parser', parserRouts)
 app.use('/register', registerRouts)
+app.use('/orglist', orglistRouts)
+
+app.use(express.json());
 
 module.exports = app;
+
+
 
