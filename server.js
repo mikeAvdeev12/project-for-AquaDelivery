@@ -1,11 +1,8 @@
 const http = require('http');
+const app = require('./app');
 
-const server = http.createServer((req, res) => {
-  res.write('Hellow form NodeJS');
-  res.end();
-});
+const port = process.env.PORT || 3000;
 
-server.listen(3000, () => {
-  console.log('Server is running...');
-  
-})
+const server = http.createServer(app);
+
+server.listen(port);
