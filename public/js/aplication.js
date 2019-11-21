@@ -1,4 +1,5 @@
 let form = document.getElementById('inn-form');
+let companyInfo = document.querySelector('.companyInfo');
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -15,9 +16,16 @@ form.addEventListener('submit', async (event) => {
   });
   
   if (response.status === 200) {
-    const result = await response.json();
-    console.log(result)
-    // console.log(result.items[0].ЮЛ.НаимСокрЮЛ)
+
+    // Получаем ответ от сервера с вариантами организаций по введеному ИНН
+    const result = await response.text();
+
+    // Находим контейнер для импортированияя данных по компании
+    let cont = document.querySelector(".companyInfo");
+
+    // Импортируем данные
+    cont.innerHTML = result
+
   } else {
     console.log(`ERROR: ${response.status}`);
   }
