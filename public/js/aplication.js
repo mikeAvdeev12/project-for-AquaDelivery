@@ -17,13 +17,8 @@ form.addEventListener('submit', async (event) => {
   if (response.status === 200) {
     const result = await response.json();
     console.log(result)
-    console.log(result.items[0].ЮЛ.НаимСокрЮЛ)
+    // console.log(result.items[0].ЮЛ.НаимСокрЮЛ)
   } else {
     console.log(`ERROR: ${response.status}`);
   }
-
-  // const response = await fetch('https://api-fns.ru/api/egr?req=9715321680&key=195f234896a9df8091803dbaf94fb4a460fb5b8e');
-
-  // let data = await response.json()
-  // console.log(data)
 });
