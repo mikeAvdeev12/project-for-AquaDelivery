@@ -23,7 +23,7 @@ router.post('/', async function (req, res, next) {
   // const response = await fetch('https://api-fns.ru/api/egr?req=9715321680&key=195f234896a9df8091803dbaf94fb4a460fb5b8e');
 
   //Получаем ответ из API ФНС
-  let data = await response.json()
+  // let data = await response.json()
   // let comname = data.items[0].ЮЛ.НаимСокрЮЛ
 
   // Тестовый файл, чтобы не юзать ключ API ФНС

@@ -4,7 +4,6 @@ const path = require("path");
 const indexRouts = require('./routes/index')
 const parserRouts = require('./routes/parser')
 const registerRouts = require('./routes/register')
-const orglistRouts = require('./routes/orglist')
 const mongodb = require('mongodb');
 const mongoose = require('mongoose')
 const app = express();
