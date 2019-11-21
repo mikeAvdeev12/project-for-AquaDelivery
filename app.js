@@ -4,8 +4,9 @@ const path = require("path");
 const indexRouts = require('./routes/index')
 const parserRouts = require('./routes/parser')
 const registerRouts = require('./routes/register');
-const orglistRouts = require('./routes/orglist')
-
+const orglistRouts = require('./routes/orglist');
+const uploadRouts = require('./routes/upload');
+const  fileUpload  =  require ('express-fileupload');
 
 const app = express();
 const hbs = exphbs.create({
@@ -22,7 +23,7 @@ app.use('/', indexRouts)
 app.use('/parser', parserRouts)
 app.use('/register', registerRouts)
 app.use('/orglist', orglistRouts)
-
+app.use('/upload', uploadRouts)
 
 module.exports = app;
 
