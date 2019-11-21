@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+}
+.companyInfo__category {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 50px;
+}
+.companyInfo__category-item {
+  margin-top: 20px;
+}

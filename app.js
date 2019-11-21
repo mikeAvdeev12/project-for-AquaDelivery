@@ -8,10 +8,14 @@ const orglistRouts = require('./routes/orglist')
 const mongodb = require('mongodb');
 const mongoose = require('mongoose')
 const app = express();
-const hbs = exphbs.create({
-  defaultLayout: 'layout',
-  extname: 'hbs'
-})
+
+const hbs = exphbs.create( {
+	defaultLayout: 'layout',
+    extname: 'hbs',
+    layoutsDir: path.join(__dirname, 'views', 'layouts'),
+    partialsDir: path.join(__dirname, 'views', 'partials'),
+});
+
 app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'views')
@@ -21,8 +25,5 @@ app.use(express.json());
 app.use('/', indexRouts)
 app.use('/parser', parserRouts)
 app.use('/register', registerRouts)
-app.use('/orglist', orglistRouts)
+
 module.exports = app;
-
-
-
