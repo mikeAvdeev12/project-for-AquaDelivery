@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 router.post('/', async function (req, res, next) {
   
   let inn = req.body.inn
-  console.log(inn)
+  // console.log(inn)
 
   const response = await fetch(`https://api-fns.ru/api/egr?req=${inn}&key=bfd4b6072c05c3201dde967373468a767ddab9fd`);
 
