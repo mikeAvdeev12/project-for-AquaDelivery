@@ -26,6 +26,8 @@ form.addEventListener('submit', async (event) => {
     // Импортируем данные
     cont.innerHTML = result
 
+    form.style.display = 'none'
+
   } else {
     console.log(`ERROR: ${response.status}`);
   }
