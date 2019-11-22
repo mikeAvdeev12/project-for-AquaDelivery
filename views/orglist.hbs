@@ -1,23 +1,24 @@
-<h1>hi</h1>
+<h1>Сведения о компании:</h1>
 {{#each items }}
   <ul class="companyInfo__category">
     <li class="companyInfo__category-item">Название организации: {{ ЮЛ.НаимПолнЮЛ }}</li>
-    {{!-- <li class="companyInfo__category-item">city: {{ city }}</li>
-    <li class="companyInfo__category-item">brand: {{ brand }}</li>
-    <li class="companyInfo__category-item">Директор: {{ director }}</li> --}}
+    <li class="companyInfo__category-item">{{ ЮЛ.Руководитель.Должн }}: {{ ЮЛ.Руководитель.ФИОПолн }}</li>
+    <li class="companyInfo__category-item">Адрес: {{ ЮЛ.Адрес.АдресПолн }}</li>
     <li class="companyInfo__category-item">ИНН: {{ ЮЛ.ИНН }}</li>
     <li class="companyInfo__category-item">КПП: {{ ЮЛ.КПП }}</li>
     <li class="companyInfo__category-item">ОГРН: {{ ЮЛ.ОГРН }}</li>
+
+    {{!-- <li class="companyInfo__category-item">brand: {{ brand }}</li> --}}
     {{!-- <li class="companyInfo__category-item">bank: {{ bank }}</li>
-    <li class="companyInfo__category-item">bik: {{ bik }}</li>
-    <li class="companyInfo__category-item">corAccount: {{ corAccount }}</li>
-    <li class="companyInfo__category-item">raschetAccount: {{ raschetAccount }}</li>
-    <li class="companyInfo__category-item">companyAddress: {{ companyAddress }}</li>
-    <li class="companyInfo__category-item">deliveryAddress: {{ deliveryAddress }}</li>
-    <li class="companyInfo__category-item">phone: {{ phone }}</li>
+    <li class="companyInfo__category-item">bik: {{ bik }}</li> --}}
+    {{!-- <li class="companyInfo__category-item">corAccount: {{ corAccount }}</li>
+    <li class="companyInfo__category-item">raschetAccount: {{ raschetAccount }}</li> --}}
+    {{!-- <li class="companyInfo__category-item">deliveryAddress: {{ deliveryAddress }}</li> --}}
+    {{!-- <li class="companyInfo__category-item">phone: {{ phone }}</li>
     <li class="companyInfo__category-item">companyEmail: {{ companyEmail }}</li>
     <li class="companyInfo__category-item">operatorPhone: {{ operatorPhone }}</li>
     <li class="companyInfo__category-item">operatorEmail: {{ operatorEmail }}</li> --}}
 </ul>
 {{/each}}
 
+    {{!-- <li class="companyInfo__category-item">Город: {{ city }}</li> --}}

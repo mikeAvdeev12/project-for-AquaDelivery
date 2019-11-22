@@ -6,7 +6,7 @@ form.addEventListener('submit', async (event) => {
 
   let inn = document.getElementById('inn-number').value;
   
-  const response = await fetch('/parser', {
+  const response = await fetch('/companydetails', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
