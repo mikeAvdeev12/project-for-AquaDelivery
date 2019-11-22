@@ -234,6 +234,44 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   margin-top: 30px;
 }
-/* #container{
-  padding-block: 500px;
-} */
+.contract {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 85vh;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 3% 7%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.contract__title {
+  text-align: center;
+  font-size: 25px;
+}
+.contract__text_center {
+  color: #404040;
+  font-size: 16px;
+  padding: 20px 0px 0px;
+  text-align: center;
+}
+.contract__text {
+  color: #404040;
+  font-size: 16px;
+  padding: 20px 0px 0px;
+}
+.contract__button {
+  width: 30%;
+  height: 40px;
+  background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
+  border-radius: 12px;
+  text-align: center;
+  align-self: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}
