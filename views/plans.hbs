@@ -43,16 +43,27 @@
 
 
   <div class="plans__plus-services">
-    <p class='plans__plan-title-center'>Дополнительные услуги к любому из пакетов:</p>
+    <p class='plans__plan-title-center'>Дополнительные услуги к&nbsp;любому из&nbsp;пакетов:</p>
 
     <p class='plans__plan-text-center'>Продвижение:<br>
-    ведение рекламы в интернете от 5000 рублей в месяц, возможность прописать сумму не менее 5000 рублей для рекламы, по умолчанию стоит 0 рублей</p>
+    ведение рекламы в&nbsp;интернете от&nbsp;5000 рублей в&nbsp;месяц, возможность прописать сумму не&nbsp;менее 5000 рублей для рекламы, по&nbsp;умолчанию стоит 0&nbsp;рублей</p>
 
   </div>
 
-  <form id='planForm' action='/plans' method='post'>
-    <input id='plan1' type='radio' class="plans__radio">Plan 1</input>
-    <input id='plan2' type='radio' class="plans__radio">Plan 2</input>
+  <form id='planForm' action='/plans' method='post' class='plans__form'>
+
+    <p class='plans__plan-title'>Выберите план:</p>
+
+    <div class="plans__radio-wrapper">
+      <input id='plan1' type='radio' class="plans__radio">
+      <label for="plan1">Базовый план</label>
+    </div>
+
+    <div class="plans__radio-wrapper">
+      <input id='plan2' type='radio' class="plans__radio">
+      <label for="plan1">Полный план</label>
+    </div>
+
     <button type='submit' class="plans__button">Выбрать</button>
   </form>
 </div>

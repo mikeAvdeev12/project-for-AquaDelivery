@@ -282,7 +282,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 85vh;
   background-color: #fff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   box-sizing: border-box;
 }
 .plans__wrapper-plans {
@@ -299,38 +299,37 @@ input[type=number]::-webkit-outer-spin-button {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .plans__plan-title {
   color: #489FE4;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .plans__plan-title-center {
   color: #489FE4;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
 .plans__plan-text {
   color: #404040;
-  font-size: 16px;
-  padding: 20px 0px 0px;
+  font-size: 14px;
+  padding: 10px 0px 0px;
 }
 .plans__plan-text-center {
   color: #404040;
-  font-size: 16px;
-  padding: 20px 0px 0px;
+  font-size: 14px;
+  padding: 10px 0px 0px;
   width: 60%;
   text-align: left;
 }
 .plans__button {
-  width: 30%;
+  width: 0%;
   height: 40px;
   background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
   border-radius: 12px;
   text-align: center;
-  align-self: center;
   font-weight: 500;
   color: #fff;
   font-size: 25px;
@@ -338,4 +337,15 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
   outline: none;
   margin-top: 30px;
+}
+.plans__form {
+  display: flex;
+  flex-direction: column;
+  align-self: left;
+  margin-top: 20px;
+}
+.plans__radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
