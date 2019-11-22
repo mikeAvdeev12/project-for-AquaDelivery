@@ -275,3 +275,67 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
   margin-top: 30px;
 }
+.plans {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 85vh;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.plans__wrapper-plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plans__plan {
+  width: 43%;
+  padding: 2%;
+}
+.plans__plus-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.plans__plan-title {
+  color: #489FE4;
+  font-size: 18px;
+  font-weight: 500;
+}
+.plans__plan-title-center {
+  color: #489FE4;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.plans__plan-text {
+  color: #404040;
+  font-size: 16px;
+  padding: 20px 0px 0px;
+}
+.plans__plan-text-center {
+  color: #404040;
+  font-size: 16px;
+  padding: 20px 0px 0px;
+  width: 60%;
+  text-align: left;
+}
+.plans__button {
+  width: 30%;
+  height: 40px;
+  background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
+  border-radius: 12px;
+  text-align: center;
+  align-self: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}

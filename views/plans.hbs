@@ -1,48 +1,59 @@
-<div>
-  <div>
-    Базовый включает в себе:
-    - мобильное приложение Android и iOS,
-    - админка по управлению системой,
-    - кабинет заказов (CRM для работы с клиентами),
-    - сайт для заказов
+<div class='plans'>
 
-    цена его составляет 1000 рублей в месяц
+  <h2 class='plans__plan-title-center' style="margin-bottom:20px">Клиентские пакеты</h2>
 
-    в случае оплаты за год оформление и настройка бесплатное,
-    при оплате за 6 месяцев оформление и настройка добавочкая стоимость 10 т.р.,
-    при оплате помесячно 15 т.р. за настройку и оформление
+<hr>
+  <div class='plans__wrapper-plans'>
+
+    
+
+    <div class='plans__plan' >
+      <p class='plans__plan-title'>Базовый план включает в&nbsp;себя:</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;мобильное приложение Android и&nbsp;iOS,</span>
+      <p class='plans__plan-text'>&mdash;&nbsp;админка по&nbsp;управлению системой,</span>
+      <p class='plans__plan-text'>&mdash;&nbsp;кабинет заказов (CRM для работы с&nbsp;клиентами),</span>
+      <p class='plans__plan-text'>&mdash;&nbsp;сайт для заказов</p>
+
+      <p class='plans__plan-text'>цена его составляет 1000 рублей в&nbsp;месяц</p>
+
+      <p class='plans__plan-text'>в&nbsp;случае оплаты за&nbsp;год оформление и&nbsp;настройка бесплатное, при оплате за&nbsp;6&nbsp;месяцев оформление и&nbsp;настройка добавочкая стоимость 10&nbsp;т.р., при оплате помесячно 15&nbsp;т.р.&nbsp;за&nbsp;настройку и&nbsp;оформление</p>
+    </div>
+
+    <div class="plans__plan">
+      <p class='plans__plan-title'>Полный план включает в&nbsp;себя:</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;мобильное приложение Android и&nbsp;iOS,</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;админка по&nbsp;управлению системой, полная</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;кабинет заказов (CRM для работы с&nbsp;клиентами), полная</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;сайт для заказов, расширенный</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;кабинет руководителя</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;возможность подключения эквайринга</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;возможность использовать кэшбэк и&nbsp;промокоды</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;возможность использовать чат с&nbsp;клиентом</p>
+      <p class='plans__plan-text'>&mdash;&nbsp;возможность подключать к&nbsp;работе курьерское приложение</p>
+
+      <p class='plans__plan-text'>цена его составляет 15000 рублей в&nbsp;месяц</p>
+
+      <p class='plans__plan-text'>в&nbsp;случае оплаты за&nbsp;год оформление и&nbsp;настройка бесплатное,при оплате за&nbsp;6&nbsp;месяцев оформление и&nbsp;настройка добавочкая стоимость 10&nbsp;т.р., при оплате помесячно 15&nbsp;т.р.&nbsp;за&nbsp;настройку и&nbsp;оформление</p>
+
+    </div>
+
   </div>
-  <div>
-    Полный включает в себе:
-    - мобильное приложение Android и iOS,
-    - админка по управлению системой, полная
-    - кабинет заказов (CRM для работы с клиентами), полная
-    - сайт для заказов, расширенный
-    - кабинет руководителя
-    - возможность подключения эквайринга
-    - возможность использовать кэшбэк и промокоды
-    - возможность использовать чат с клиентом
-    - возможность подключать к работе курьерское приложение
 
-    цена его составляет 15000 рублей в месяц
+  <hr>
 
-    в случае оплаты за год оформление и настройка бесплатное,
-    при оплате за 6 месяцев оформление и настройка добавочкая стоимость 10 т.р.,
-    при оплате помесячно 15 т.р. за настройку и оформление
+
+  <div class="plans__plus-services">
+    <p class='plans__plan-title-center'>Дополнительные услуги к любому из пакетов:</p>
+
+    <p class='plans__plan-text-center'>Продвижение:<br>
+    ведение рекламы в интернете от 5000 рублей в месяц, возможность прописать сумму не менее 5000 рублей для рекламы, по умолчанию стоит 0 рублей</p>
 
   </div>
-  <div>
-    Дополнительные услуги к любому из пакетов:
 
-    Продвижение:
-
-    ведение рекламы в интернете от 5000 рублей в месяц, возможность прописать сумму не менее 5000 рублей для рекламы, по
-    умолчанию стоит 0 рублей
-  </div>
   <form id='planForm' action='/plans' method='post'>
-  <input id='plan1' type='radio'>Plan 1</input>
-  <input id='plan2' type='radio'>Plan 2</input>
-  <button type='submit'>Submit</button>
+    <input id='plan1' type='radio' class="plans__radio">Plan 1</input>
+    <input id='plan2' type='radio' class="plans__radio">Plan 2</input>
+    <button type='submit' class="plans__button">Выбрать</button>
   </form>
 </div>
 <script defer src="/js/plans.js"></script>
