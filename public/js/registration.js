@@ -16,7 +16,6 @@ document.querySelector('#registrationForm').addEventListener('submit', async eve
 
   if (response.status === 200) {
     const result = await response.json();
-    console.log(result);
     window.location = '/companydetails'
   } else {
     console.log(`ERROR: ${response.status}`);
