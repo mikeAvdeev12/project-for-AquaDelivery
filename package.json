@@ -8,8 +8,10 @@
     "dev": "nodemon server.js"
   },
   "nodemonConfig": {
-    "ignore": ["sessions/*"]
-},
+    "ignore": [
+      "sessions/*"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KaterinaZM/project-for-AquaDelivery.git"
