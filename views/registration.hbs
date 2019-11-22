@@ -1,8 +1,10 @@
-<h1>Register</h1>
+<form type='submit' class='registrationForm' id='registrationForm' method='post' action='/registration'>
+  <h4 class='registrationForm__title'>Регистрация</h4>
+  <label for='emailInput' class="registrationForm__label">Имя:</label>
+  <input id='emailInput' class="registrationForm__input" type="email" placeholder="email@example.com" required>
 
-<form type='submit' id='registrationForm' method='post' action='/registration'>
-  <input id='emailInput' type="email" placeholder="email@example.com">
-  <input id='passwordInput' type="password" placeholder="your secure pwd">
-  <button id='registerButton' href='/oops'>Register</button>
+  <label for='emailInput' class="registrationForm__label">E-mail:</label>  
+  <input id='passwordInput' class="registrationForm__input" type="password" placeholder="password" required>
+  <button id='registerButton' class="registrationForm__button">Отправить</button>
 </form>
 <script defer src="/js/registration.js"></script>

@@ -1,24 +1,39 @@
-<h1>Сведения о компании:</h1>
+<h4 class='companyInfo__title'>Сведения о компании:</h4>
+
+<form action="/contract" class="companyInfo__category-form">
 {{#each items }}
   <ul class="companyInfo__category">
-    <li class="companyInfo__category-item">Название организации: {{ ЮЛ.НаимПолнЮЛ }}</li>
-    <li class="companyInfo__category-item">{{ ЮЛ.Руководитель.Должн }}: {{ ЮЛ.Руководитель.ФИОПолн }}</li>
-    <li class="companyInfo__category-item">Адрес: {{ ЮЛ.Адрес.АдресПолн }}</li>
-    <li class="companyInfo__category-item">ИНН: {{ ЮЛ.ИНН }}</li>
-    <li class="companyInfo__category-item">КПП: {{ ЮЛ.КПП }}</li>
-    <li class="companyInfo__category-item">ОГРН: {{ ЮЛ.ОГРН }}</li>
+    <li class="companyInfo__category-item">Название организации:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.НаимПолнЮЛ }}</span></li>
+    <li class="companyInfo__category-item">{{ ЮЛ.Руководитель.Должн }}:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.Руководитель.ФИОПолн }}</span></li>
+    <li class="companyInfo__category-item">ИНН:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.ИНН }}</span></li>
+    <li class="companyInfo__category-item">КПП:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.КПП }}</span></li>
+    <li class="companyInfo__category-item">ОГРН:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.ОГРН }}</span></li>
+    <li class="companyInfo__category-item">Юридический адрес:<br> <span class='companyInfo__category-answer'>{{ ЮЛ.Адрес.АдресПолн }}</span></li>
 
-    {{!-- <li class="companyInfo__category-item">brand: {{ brand }}</li> --}}
-    {{!-- <li class="companyInfo__category-item">bank: {{ bank }}</li>
-    <li class="companyInfo__category-item">bik: {{ bik }}</li> --}}
-    {{!-- <li class="companyInfo__category-item">corAccount: {{ corAccount }}</li>
-    <li class="companyInfo__category-item">raschetAccount: {{ raschetAccount }}</li> --}}
-    {{!-- <li class="companyInfo__category-item">deliveryAddress: {{ deliveryAddress }}</li> --}}
-    {{!-- <li class="companyInfo__category-item">phone: {{ phone }}</li>
-    <li class="companyInfo__category-item">companyEmail: {{ companyEmail }}</li>
-    <li class="companyInfo__category-item">operatorPhone: {{ operatorPhone }}</li>
-    <li class="companyInfo__category-item">operatorEmail: {{ operatorEmail }}</li> --}}
+    <li class="companyInfo__category-item">Фактический адрес:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="г. Москва, ул. Вавилова, д. 1" required></span></li>
+
+    <li class="companyInfo__category-item">Бренд:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите бренд" required></span></li>
+
+    <li class="companyInfo__category-item">Ваш банк:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите название банка" required></span></li>
+
+    <li class="companyInfo__category-item">БИК:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите БИК банка" required></span></li>
+
+    <li class="companyInfo__category-item">Корреспондентский счет:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите корреспондентский счет банка" required></span></li>
+
+    <li class="companyInfo__category-item">Расчетный счет организации:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите расчетный счет организации" required></span></li>
+
+    <li class="companyInfo__category-item">Телефон организации:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите телефон" required></span></li>
+
+    <li class="companyInfo__category-item">E-mail организации:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите телефон" required></span></li>
+
+    <li class="companyInfo__category-item">Телефон диспетчера:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите телефон" required></span></li>
+
+    <li class="companyInfo__category-item">E-mail диспетчера:<br> <span class='companyInfo__category-answer'><input class='companyInfo__category-answer-input' type="text" placeholder="Введите телефон" required></span></li>
+
+    <li class="companyInfo__category-item"><button type="submit" class='companyInfo__inn-button'>Сохранить и продолжить</button></li>
+
 </ul>
 {{/each}}
 
-    {{!-- <li class="companyInfo__category-item">Город: {{ city }}</li> --}}
+
+</form>

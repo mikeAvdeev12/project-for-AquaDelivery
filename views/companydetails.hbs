@@ -1,9 +1,17 @@
 <script defer src="/js/companydetails.js"></script>
 
-<form action="/companydetails" method="post" class='inn-form' id='inn-form'>
-  <label for="inn-number">Введите номер ИНН</label>
-  <input type="number" required name="inn-number" id='inn-number'>
-  <button type="submit">Отправить</button>
-</form>
+<div class="companydetails">
 
-<div class="companyInfo"></div>
+  <form action="/companydetails" method="post" class='companydetails__inn-form' id='inn-form'>
+    <label for="inn-number" class='companydetails__inn-label'>Введите номер ИНН для поиска данных о Вашей организации:</label>
+    <input type="number" required name="inn-number" id='inn-number' class='companydetails__inn-input'>
+    <button type="submit" class='companydetails__inn-button'>Отправить</button>
+
+  </form>
+
+  
+    
+    <div class="companyInfo"></div>
+
+
+</div>

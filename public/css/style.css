@@ -1,17 +1,236 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat-Black.ttf');
+  font-weight: 900;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 400px;
+  height: 470px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.registrationForm__title {
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  color: #5087dd;
+}
+.registrationForm__label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+  padding-top: 30px;
+}
+.registrationForm__input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+  width: 290px;
+  height: 50px;
+  border-bottom: 2px solid #489FE4;
+}
+.registrationForm__input::placeholder {
+  color: #cac7c7;
+}
+.registrationForm__button {
+  height: 40px;
+  background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+}
+.companydetails {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 85vh;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.companydetails__inn-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+}
+.companydetails__inn-label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+}
+.companydetails__inn-input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+  border-bottom: 2px solid #489FE4;
+  margin-top: 30px;
+  width: 30%;
+}
+.companydetails__inn-button {
+  width: 30%;
+  height: 40px;
+  background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
 }
 .companyInfo {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+.companyInfo__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #489FE4;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.companyInfo__category-form {
+  height: 100%;
 }
 .companyInfo__category {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin-left: 50px;
+  flex-wrap: wrap;
+  height: 90%;
 }
 .companyInfo__category-item {
-  margin-top: 20px;
+  color: #489FE4;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 50%;
+}
+.companyInfo__category-answer {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 80%;
+}
+.companyInfo__category-answer-input {
+  color: #404040;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #489FE4;
+  width: 80%;
+}
+.companyInfo__category-answer-input::placeholder {
+  color: #cac7c7;
+}
+.companyInfo__inn-button {
+  width: 80%;
+  height: 40px;
+  background: linear-gradient(90deg, #50b5d8 0%, #5087dd 100%);
+  border-radius: 12px;
+  text-align: center;
+  align-self: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
 }
