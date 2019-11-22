@@ -5,6 +5,7 @@ const indexRouts = require('./routes/index')
 const parserRouts = require('./routes/parser')
 const registerRouts = require('./routes/register')
 const uploadRouts = require('./routes/upload')
+const countDownRouts = require('./routes/countdown')
 const mongodb = require('mongodb');
 const mongoose = require('mongoose')
 const app = express();
@@ -26,5 +27,6 @@ app.use('/', indexRouts)
 app.use('/parser', parserRouts)
 app.use('/register', registerRouts)
 app.use('/upload', uploadRouts)
+app.use('/countdown', countDownRouts)
 
 module.exports = app;
