@@ -11,6 +11,8 @@ const contractRouts = require('./routes/contract');
 const plansRouts = require('./routes/plans');
 const invoiceRouts = require('./routes/invoice');
 const logoutRouts = require('./routes/logout');
+const uploadRouts = require('./routes/upload')
+const countDownRouts = require('./routes/countdown')
 
 const app = express();
 
@@ -46,5 +48,7 @@ app.use('/contract', contractRouts);
 app.use('/plans', plansRouts);
 app.use('/invoice', invoiceRouts);
 app.use('/logout', logoutRouts);
+app.use('/countdown', countDownRouts);
+app.use('/upload', uploadRouts);
 
 module.exports = app;
