@@ -4,6 +4,7 @@ const path = require("path");
 const indexRouts = require('./routes/index')
 const parserRouts = require('./routes/parser')
 const registerRouts = require('./routes/register')
+const uploadRouts = require('./routes/upload')
 const mongodb = require('mongodb');
 const mongoose = require('mongoose')
 const app = express();
@@ -24,5 +25,6 @@ app.use(express.json());
 app.use('/', indexRouts)
 app.use('/parser', parserRouts)
 app.use('/register', registerRouts)
+app.use('/upload', uploadRouts)
 
 module.exports = app;
