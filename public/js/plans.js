@@ -12,7 +12,7 @@ document.querySelector('#planForm').addEventListener('submit', async event => {
     },
     body: JSON.stringify({ chosenPlan }),
   });
-  window.location = 'upload'
+  window.location = '/upload'
 
   if (response.status === 200) {
     const result = await response.text();
